@@ -168,6 +168,7 @@ export const i18nKeys = {
         },
     },
     lockException: {
+        hierarchy: 'Hierarchy',
         title: 'Lock Exception Management',
         batchDeletionHeader: 'Lock Exception',
         batchDeletionSubHeader: 'Batch Deletion',

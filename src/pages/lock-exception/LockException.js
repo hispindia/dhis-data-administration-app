@@ -107,6 +107,7 @@ class LockException extends Page {
         // FIXME Hack in some translations
         const d2 = context.d2;
         Object.assign(d2.i18n.translations, {
+            hierarchy: i18n.t(i18nKeys.lockException.hierarchy),
             period: i18n.t(i18nKeys.lockException.period),
             data_set: i18n.t(i18nKeys.lockException.dataSet),
             organisation_unit: i18n.t(i18nKeys.lockException.organisationUnit),
@@ -164,6 +165,7 @@ class LockException extends Page {
                 row.organisationUnit = le.organisationUnit.displayName;
                 row.organisationUnitId = le.organisationUnit.id;
             }
+            row.hierarchy = le.name;
             row.period = le.period.displayName;
             row.periodId = le.period.id;
             row.dataSet = le.dataSet.displayName;
@@ -176,7 +178,7 @@ class LockException extends Page {
         if (this.state.atBatchDeletionPage) {
             return ['dataSet', 'period'];
         }
-        return ['organisationUnit', 'dataSet', 'period'];
+        return ['hierarchy', 'organisationUnit', 'dataSet', 'period'];
     }
 
     header() {

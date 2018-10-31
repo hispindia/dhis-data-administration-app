@@ -50,3 +50,20 @@ You must have the dev server running on port 3000, as explained previously.
 
 ## License
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fdhis2%2Fdata-administration-app.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fdhis2%2Fdata-administration-app?ref=badge_large)
+
+## for local Build
+build data-admin module ( in react-js)
+
+on command promt run the command
+
+// for install yarn globally
+npm install yarn -g or npm install --global yarn
+
+then compile/build
+yarn install
+
+// for [npm run lint -- --fix ] to get rid of current CRLF(Carriage Return (ASCII 13, \r) Line Feed (ASCII 10, \n))
+npm run lint -- --fix
+then
+
+yarn build
